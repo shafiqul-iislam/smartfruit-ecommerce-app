@@ -19,7 +19,6 @@ const cartCount = ref(3); // You can replace this with props or store value
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-3 items-center">
                     <Link href="/shop" class="text-gray-700 hover:text-blue-600 px-2">Shop</Link>
-                    <Link href="/shop-details" class="text-gray-700 hover:text-blue-600 px-2">Shop Details</Link>
 
                     <div class="relative inline-block text-left group">
 
@@ -44,7 +43,8 @@ const cartCount = ref(3); // You can replace this with props or store value
                                     opacity-0 scale-95 invisible 
                                     group-hover/sub:opacity-100 group-hover/sub:scale-100 group-hover/sub:visible
                                     transition-all duration-200 origin-top-left">
-                                    <Link href="#" class="block px-4 py-2 hover:bg-gray-100">Testimonial 1</Link>
+                                    <Link href="/not-found" class="block px-4 py-2 hover:bg-gray-100">Testimonial 1
+                                    </Link>
                                     <Link href="#" class="block px-4 py-2 hover:bg-gray-100">Testimonial 2</Link>
                                 </div>
                             </div>

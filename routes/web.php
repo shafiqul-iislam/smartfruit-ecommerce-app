@@ -24,7 +24,23 @@ Route::get('/', function () {
 });
 
 Route::get('/shop', function () {
-   return Inertia::render('Frontend/Shop');
+    return Inertia::render('Frontend/Shop');
+});
+
+Route::get('/cart', function () {
+    return Inertia::render('Frontend/Cart');
+});
+
+Route::get('/checkout', function () {
+    return Inertia::render('Frontend/Checkout');
+});
+
+Route::get('/contact', function () {
+    return Inertia::render('Frontend/Contact');
+});
+
+Route::get('/not-found', function () {
+    return Inertia::render('Frontend/NotFound');
 });
 
 
