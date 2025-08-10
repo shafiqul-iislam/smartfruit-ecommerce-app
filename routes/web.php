@@ -15,7 +15,7 @@ use Inertia\Inertia;
 
 
 Route::get('/', function () {
-    return Inertia::render('Landing/Home', [
+    return Inertia::render('Frontend/Home', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
@@ -24,7 +24,7 @@ Route::get('/', function () {
 });
 
 Route::get('/shop', function () {
-   return Inertia::render('Landing/Shop');
+   return Inertia::render('Frontend/Shop');
 });
 
 
