@@ -1,5 +1,5 @@
 
 ## Screenshots
 
-### Customer Registation
-![Service Booking System](public/screenshots/ecommerce.png)
+### Home Page
+![Ecommerce App](public/screenshots/ecommerce.png)
