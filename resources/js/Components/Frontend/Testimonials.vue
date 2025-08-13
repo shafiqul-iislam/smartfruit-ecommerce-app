@@ -31,7 +31,7 @@ const prevSlide = () => {
 // Auto-play
 let interval = null
 onMounted(() => {
-  interval = setInterval(nextSlide, 5000)
+  interval = setInterval(nextSlide, 8000)
 })
 onBeforeUnmount(() => {
   clearInterval(interval)

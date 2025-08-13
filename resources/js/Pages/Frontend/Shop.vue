@@ -1,10 +1,16 @@
 <script setup>
 import Footer from '@/Components/Frontend/Footer.vue';
+import Navbar from '@/Components/Frontend/Navbar.vue';
+import { Head } from '@inertiajs/vue3';
 </script>
 
 
 <template>
-    <section class="py-10 bg-gray-50">
+    <Head title="Shop" />
+
+    <Navbar />
+
+    <section class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-4 gap-8">
 
             <!-- Sidebar -->
@@ -92,6 +98,6 @@ import Footer from '@/Components/Frontend/Footer.vue';
 
         </div>
     </section>
-</template>
 
-<Footer />
+    <Footer />
+</template>

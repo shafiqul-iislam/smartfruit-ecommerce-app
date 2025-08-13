@@ -39,6 +39,15 @@ Route::get('/contact', function () {
     return Inertia::render('Frontend/Contact');
 });
 
+Route::get('/about-us', function () {
+    return Inertia::render('Frontend/About');
+});
+
+Route::get('/testimonials', function () {
+    return Inertia::render('Frontend/Testimonials');
+});
+
+
 Route::get('/not-found', function () {
     return Inertia::render('Frontend/NotFound');
 });

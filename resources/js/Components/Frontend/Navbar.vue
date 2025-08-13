@@ -4,6 +4,7 @@ import { Link, Head } from '@inertiajs/vue3'
 
 const mobileMenuOpen = ref(false);
 const cartCount = ref(3); // You can replace this with props or store value
+const searchQuery = ref("");
 
 </script>
 
@@ -18,6 +19,20 @@ const cartCount = ref(3); // You can replace this with props or store value
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-3 items-center">
+
+                    <!-- Search -->
+                    <div class="relative mr-3">
+                        <input v-model="searchQuery" type="text" placeholder="Search products..."
+                            class="border border-gray-300 rounded-lg px-3 py-1.5 pl-9 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+                        <svg class="w-5 h-5 text-gray-500 absolute left-2 top-2.5" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-4.35-4.35M16 10a6 6 0 11-12 0 6 6 0 0112 0z"></path>
+                        </svg>
+                    </div>
+
+
+                    <Link href="/" class="text-gray-700 hover:text-blue-600 px-2">Home</Link>
                     <Link href="/shop" class="text-gray-700 hover:text-blue-600 px-2">Shop</Link>
 
                     <div class="relative inline-block text-left group">
@@ -34,11 +49,10 @@ const cartCount = ref(3); // You can replace this with props or store value
                                     transition-all duration-200 origin-top z-10">
                             <Link href="/cart" class="block px-4 py-2 hover:bg-gray-100">Cart</Link>
                             <Link href="/checkout" class="block px-4 py-2 hover:bg-gray-100">Checkout</Link>
+                            <Link href="/testimonials" class="block px-4 py-2 hover:bg-gray-100">Testimonials</Link>
 
-                            <div class="relative group/sub">
-                                <Link href="/testimonials" class="block px-4 py-2 hover:bg-gray-100">Testimonials ▸
-                                </Link>
-                                <!-- Submenu -->
+                            <!-- Submenu -->
+                            <!-- <div class="relative group/sub">
                                 <div class="absolute top-0 left-full ml-1 w-40 bg-white border border-gray-200 rounded-md shadow-lg
                                     opacity-0 scale-95 invisible 
                                     group-hover/sub:opacity-100 group-hover/sub:scale-100 group-hover/sub:visible
@@ -47,7 +61,7 @@ const cartCount = ref(3); // You can replace this with props or store value
                                     </Link>
                                     <Link href="#" class="block px-4 py-2 hover:bg-gray-100">Testimonial 2</Link>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -66,8 +80,8 @@ const cartCount = ref(3); // You can replace this with props or store value
 
                     <!-- Auth -->
                     <div>
-                        <a href="/login" class="text-gray-700 hover:text-blue-600 px-2">Login</a>
-                        <a href="/register" class="text-gray-700 hover:text-blue-600 px-2">Register</a>
+                        <Link href="/login" class="text-gray-700 hover:text-blue-600 px-2">Login</Link>
+                        <Link href="/register" class="text-gray-700 hover:text-blue-600 px-2">Register</Link>
                     </div>
                 </div>
 
@@ -99,11 +113,23 @@ const cartCount = ref(3); // You can replace this with props or store value
             </div>
 
             <div class="px-4 py-2">
-                <a href="/login" class="block py-1 text-gray-700">Login</a>
-                <a href="/register" class="block py-1 text-gray-700">Register</a>
-                <button @click="goToCart" class="flex items-center py-1 text-gray-700">
-                    🛒 <span class="ml-2">Cart ({{ cartCount }})</span>
-                </button>
+                <Link href="/cart" class="block py-1 text-gray-700">Cart</Link>
+                <Link href="/checkout" class="block py-1 text-gray-700">Checkout</Link>
+                <Link href="/contact" class="block py-1 text-gray-700">Contact</Link>
+                <Link href="/testimonials" class="block py-1 text-gray-700">Testimonials</Link>
+                <Link href="/login" class="block py-1 text-gray-700">Login</Link>
+                <Link href="/register" class="block py-1 text-gray-700">Register</Link>
+
+                <!-- Search -->
+                <div class="relative mt-4">
+                    <input v-model="searchQuery" type="text" placeholder="Search products..."
+                        class="border border-gray-300 rounded-lg px-3 py-1.5 pl-9 focus:ring-2 focus:ring-blue-500 focus:outline-none w-full" />
+                    <svg class="w-5 h-5 text-gray-500 absolute left-2 top-2.5" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-4.35-4.35M16 10a6 6 0 11-12 0 6 6 0 0112 0z"></path>
+                    </svg>
+                </div>
             </div>
         </div>
     </nav>
