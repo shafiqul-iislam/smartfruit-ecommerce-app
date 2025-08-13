@@ -19,10 +19,10 @@ const imageUrl = '/storage/images/hero-img-2.jpg';
                     class="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
                     Shop Now
                 </Link>
-                <a href="#learn"
+                <Link href="/about-us"
                     class="bg-transparent border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition">
                     Learn More
-                </a>
+                </Link>
             </div>
         </div>
     </section>

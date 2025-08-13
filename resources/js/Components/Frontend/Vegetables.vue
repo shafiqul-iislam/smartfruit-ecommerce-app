@@ -1,5 +1,10 @@
+<script setup lang="ts">
+import { Link } from '@inertiajs/vue3';
+
+</script>
+
 <template>
-    <section class="py-16 bg-gray-50">
+    <section class="py-12 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Fresh Organic Vegetables</h2>
 
@@ -174,6 +179,10 @@
                 </div>
 
             </div>
+        </div>
+
+        <div class="flex justify-center mt-12">
+            <Link href="/shop" class="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-700 transition">View All</Link>
         </div>
     </section>
 </template>

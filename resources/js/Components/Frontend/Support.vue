@@ -3,7 +3,7 @@
 
 
 <template>
-    <section class="py-20 bg-gray-50">
+    <section class="pt-20 pb-8 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
@@ -16,7 +16,7 @@
                             d="M3 3h18v6H3V3z M3 21h18v-6H3v6z" />
                     </svg>
                     <h3 class="text-lg font-bold mb-1">Free Shipping</h3>
-                    <p class="text-gray-600">Free on orders over $300</p>
+                    <p class="text-gray-600">Free on orders over $300 & fast delivery</p>
                 </div>
 
                 <!-- Card 2 -->
@@ -38,8 +38,8 @@
                         viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M12 4v16" />
                     </svg>
-                    <h3 class="text-lg font-bold mb-1">30 Day Return</h3>
-                    <p class="text-gray-600">30 day money guarantee</p>
+                    <h3 class="text-lg font-bold mb-1">15 Days Return</h3>
+                    <p class="text-gray-600">15 day money guarantee</p>
                 </div>
 
                 <!-- Card 4 -->
