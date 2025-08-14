@@ -13,16 +13,16 @@ import { Link } from '@inertiajs/vue3';
                 <!-- Product Card 1 -->
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-100">
-                        <img src="/storage/images/vegetable-item-1.jpg" alt="Leather Backpack"
+                        <img src="/storage/images/vegetable-item-1.jpg" alt="Tomato"
                             class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="mt-4 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900">Leather Backpack</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">Tomato</h3>
                         <p class="text-gray-500 text-sm mt-1 line-clamp-2">
-                            Stylish and durable leather backpack for daily use.
+                            Fresh tomatoes are a great source of essential vitamins and minerals.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
-                            <span class="text-xl font-bold text-indigo-600">$120</span>
+                            <span class="text-xl font-bold text-indigo-600">BDT 120</span>
                             <button
                                 class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm font-semibold">
                                 Add to Cart
@@ -34,16 +34,16 @@ import { Link } from '@inertiajs/vue3';
                 <!-- Product Card 2 -->
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-100">
-                        <img src="/storage/images/vegetable-item-2.jpg" alt="Smart Watch"
+                        <img src="/storage/images/vegetable-item-2.jpg" alt="Cauliflower"
                             class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="mt-4 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900">Smart Watch</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">Cauliflower</h3>
                         <p class="text-gray-500 text-sm mt-1 line-clamp-2">
-                            Track your fitness and stay connected on the go.
+                            Fresh cauliflower is a nutritious and delicious vegetable.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
-                            <span class="text-xl font-bold text-indigo-600">$250</span>
+                            <span class="text-xl font-bold text-indigo-600">BDT 150</span>
                             <button
                                 class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm font-semibold">
                                 Add to Cart
@@ -55,16 +55,16 @@ import { Link } from '@inertiajs/vue3';
                 <!-- Product Card 3 -->
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-100">
-                        <img src="/storage/images/vegetable-item-3.png" alt="Wireless Headphones"
+                        <img src="/storage/images/vegetable-item-3.jpg" alt="Raw Banana"
                             class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="mt-4 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900">Wireless Headphones</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">Raw Banana</h3>
                         <p class="text-gray-500 text-sm mt-1 line-clamp-2">
-                            Noise-cancelling over-ear headphones with deep bass.
+                            Fresh bananas are a nutritious and best vegetable.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
-                            <span class="text-xl font-bold text-indigo-600">$180</span>
+                            <span class="text-xl font-bold text-indigo-600">BDT 80</span>
                             <button
                                 class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm font-semibold">
                                 Add to Cart
@@ -76,16 +76,16 @@ import { Link } from '@inertiajs/vue3';
                 <!-- Product Card 4 -->
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-100">
-                        <img src="/storage/images/vegetable-item-4.jpg" alt="Running Shoes"
+                        <img src="/storage/images/vegetable-item-4.jpg" alt="Green Chili"
                             class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="mt-4 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900">Running Shoes</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">Green Chili</h3>
                         <p class="text-gray-500 text-sm mt-1 line-clamp-2">
-                            Lightweight and comfortable running shoes for all-day wear.
+                            Fresh green chili is a nutritious and delicious vegetable.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
-                            <span class="text-xl font-bold text-indigo-600">$95</span>
+                            <span class="text-xl font-bold text-indigo-600">BDT 95</span>
                             <button
                                 class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm font-semibold">
                                 Add to Cart
@@ -97,16 +97,16 @@ import { Link } from '@inertiajs/vue3';
                 <!-- Product Card 5 -->
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-100">
-                        <img src="/storage/images/vegetable-item-5.jpg" alt="Running Shoes"
+                        <img src="/storage/images/vegetable-item-5.jpg" alt="Potato"
                             class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="mt-4 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900">Running Shoes</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">Potato</h3>
                         <p class="text-gray-500 text-sm mt-1 line-clamp-2">
-                            Lightweight and comfortable running shoes for all-day wear.
+                            Fresh potatoes are a nutritious and delicious vegetable.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
-                            <span class="text-xl font-bold text-indigo-600">$95</span>
+                            <span class="text-xl font-bold text-indigo-600">BDT 35</span>
                             <button
                                 class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm font-semibold">
                                 Add to Cart
@@ -118,16 +118,16 @@ import { Link } from '@inertiajs/vue3';
                 <!-- Product Card 6 -->
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-100">
-                        <img src="/storage/images/vegetable-item-6.jpg" alt="Running Shoes"
+                        <img src="/storage/images/vegetable-item-6.jpg" alt="Leek"
                             class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="mt-4 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900">Running Shoes</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">Leek</h3>
                         <p class="text-gray-500 text-sm mt-1 line-clamp-2">
-                            Lightweight and comfortable running shoes for all-day wear.
+                            Fresh leeks are a nutritious and delicious vegetable.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
-                            <span class="text-xl font-bold text-indigo-600">$95</span>
+                            <span class="text-xl font-bold text-indigo-600">BDT 95</span>
                             <button
                                 class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm font-semibold">
                                 Add to Cart
@@ -139,16 +139,16 @@ import { Link } from '@inertiajs/vue3';
                 <!-- Product Card 7 -->
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-100">
-                        <img src="/storage/images/vegetable-item-1.jpg" alt="Running Shoes"
+                        <img src="/storage/images/vegetable-item-1.jpg" alt="Indian Tomato"
                             class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="mt-4 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900">Running Shoes</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">Indian Tomato</h3>
                         <p class="text-gray-500 text-sm mt-1 line-clamp-2">
-                            Lightweight and comfortable running shoes for all-day wear.
+                            Fresh tomatoes are a great source of essential vitamins and minerals.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
-                            <span class="text-xl font-bold text-indigo-600">$95</span>
+                            <span class="text-xl font-bold text-indigo-600">BDT 95</span>
                             <button
                                 class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm font-semibold">
                                 Add to Cart
@@ -160,16 +160,16 @@ import { Link } from '@inertiajs/vue3';
                 <!-- Product Card 8 -->
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-100">
-                        <img src="/storage/images/vegetable-item-2.jpg" alt="Running Shoes"
+                        <img src="/storage/images/vegetable-item-2.jpg" alt="Green Beans"
                             class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="mt-4 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900">Running Shoes</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">Green Beans</h3>
                         <p class="text-gray-500 text-sm mt-1 line-clamp-2">
-                            Lightweight and comfortable running shoes for all-day wear.
+                            Fresh green beans are a nutritious and delicious vegetable.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
-                            <span class="text-xl font-bold text-indigo-600">$95</span>
+                            <span class="text-xl font-bold text-indigo-600">BDT 95</span>
                             <button
                                 class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm font-semibold">
                                 Add to Cart

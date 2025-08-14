@@ -12,13 +12,13 @@ import { Link } from '@inertiajs/vue3';
                 <!-- Product Card 1 -->
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-100">
-                        <img src="/storage/images/best-product-1.jpg" alt="Apple"
+                        <img src="/storage/images/best-product-1.jpg" alt="Orange"
                             class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="mt-4 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900">Apple</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">Orange</h3>
                         <p class="text-gray-500 text-sm mt-1 line-clamp-2">
-                            Very Fresh Apple & Taste Is Very Good. Australian Apple.
+                            Very Fresh Oranges & Taste Is Very Good. Italian Oranges.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
                             <span class="text-xl font-bold text-indigo-600">BDT 350</span>
@@ -42,7 +42,7 @@ import { Link } from '@inertiajs/vue3';
                             Very Fresh Grapes & Taste Is Very Good. Australian Grapes.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
-                            <span class="text-xl font-bold text-indigo-600">$250</span>
+                            <span class="text-xl font-bold text-indigo-600">BDT 250</span>
                             <button
                                 class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm font-semibold">
                                 Add to Cart
@@ -54,7 +54,7 @@ import { Link } from '@inertiajs/vue3';
                 <!-- Product Card 3 -->
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-100">
-                        <img src="/storage/images/best-product-3.jpg" alt="Banana"
+                        <img src="/storage/images/fruite-item-3.jpg" alt="Banana"
                             class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="mt-4 flex-1 flex flex-col">
@@ -63,7 +63,7 @@ import { Link } from '@inertiajs/vue3';
                             Very Fresh Banana & Taste Is Very Good. Bangladeshi Banana.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
-                            <span class="text-xl font-bold text-indigo-600">$180</span>
+                            <span class="text-xl font-bold text-indigo-600">BDT 120 Dozen</span>
                             <button
                                 class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm font-semibold">
                                 Add to Cart
@@ -84,7 +84,7 @@ import { Link } from '@inertiajs/vue3';
                             Very Fresh Passion Fruit & Taste Is Very Good. Australian Passion Fruit.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
-                            <span class="text-xl font-bold text-indigo-600">$95</span>
+                            <span class="text-xl font-bold text-indigo-600">BDT 395</span>
                             <button
                                 class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm font-semibold">
                                 Add to Cart
@@ -96,16 +96,16 @@ import { Link } from '@inertiajs/vue3';
                 <!-- Product Card 5 -->
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-100">
-                        <img src="/storage/images/best-product-5.jpg" alt="Running Shoes"
+                        <img src="/storage/images/best-product-5.jpg" alt="Grapes"
                             class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="mt-4 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900">Running Shoes</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">Grapes</h3>
                         <p class="text-gray-500 text-sm mt-1 line-clamp-2">
-                            Lightweight and comfortable running shoes for all-day wear.
+                            Very Fresh Grapes & Taste Is Very Good. Argentine Grapes.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
-                            <span class="text-xl font-bold text-indigo-600">$95</span>
+                            <span class="text-xl font-bold text-indigo-600">BDT 450</span>
                             <button
                                 class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm font-semibold">
                                 Add to Cart
@@ -117,16 +117,16 @@ import { Link } from '@inertiajs/vue3';
                 <!-- Product Card 6 -->
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-100">
-                        <img src="/storage/images/best-product-6.jpg" alt="Running Shoes"
+                        <img src="/storage/images/best-product-6.jpg" alt="Apple"
                             class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="mt-4 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900">Running Shoes</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">Apple</h3>
                         <p class="text-gray-500 text-sm mt-1 line-clamp-2">
-                            Lightweight and comfortable running shoes for all-day wear.
+                            Very Fresh Apple & Taste Is Very Good. Australian Apple.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
-                            <span class="text-xl font-bold text-indigo-600">$95</span>
+                            <span class="text-xl font-bold text-indigo-600">BDT 360</span>
                             <button
                                 class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm font-semibold">
                                 Add to Cart
@@ -138,13 +138,13 @@ import { Link } from '@inertiajs/vue3';
                 <!-- Product Card 7 -->
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-100">
-                        <img src="/storage/images/best-product-4.jpg" alt="Running Shoes"
+                        <img src="/storage/images/best-product-4.jpg" alt="Pomegranate"
                             class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="mt-4 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900">Running Shoes</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">Pomegranate</h3>
                         <p class="text-gray-500 text-sm mt-1 line-clamp-2">
-                            Lightweight and comfortable running shoes for all-day wear.
+                            Very Fresh Pomegranate & Taste Is Very Good. Australian Pomegranate.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
                             <span class="text-xl font-bold text-indigo-600">$95</span>
@@ -159,13 +159,13 @@ import { Link } from '@inertiajs/vue3';
                 <!-- Product Card 8 -->
                 <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-100">
-                        <img src="/storage/images/best-product-1.jpg" alt="Running Shoes"
+                        <img src="/storage/images/best-product-1.jpg" alt="Orange"
                             class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="mt-4 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900">Running Shoes</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">Orange</h3>
                         <p class="text-gray-500 text-sm mt-1 line-clamp-2">
-                            Lightweight and comfortable running shoes for all-day wear.
+                            Very Fresh Oranges & Taste Is Very Good. Russian Orange.
                         </p>
                         <div class="mt-4 flex items-center justify-between">
                             <span class="text-xl font-bold text-indigo-600">$95</span>

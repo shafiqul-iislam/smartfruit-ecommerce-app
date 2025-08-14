@@ -9,3 +9,9 @@
 
 ### Fruits
 ![Ecommerce App](public/screenshots/fruits.jpg)
+
+### Vegetables
+![Ecommerce App](public/screenshots/vegetables.jpg)
+
+### Footer
+![Ecommerce App](public/screenshots/footer.jpg)

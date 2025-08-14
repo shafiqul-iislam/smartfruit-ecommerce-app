@@ -1,4 +1,5 @@
 <script setup>
+import { Link } from '@inertiajs/vue3';
 </script>
 
 <template>
@@ -12,14 +13,17 @@
                         Fresh Exotic Fruits in Our Store
                     </h2>
                     <p class="text-lg text-gray-600 mb-8">
-                        Discover high-quality, stylish, and comfortable products designed to fit your lifestyle.
-                        From casual to formal, we bring you the best in fashion at unbeatable prices.
+                        Discover nature’s sweetest treasures with our selection of fresh exotic fruits, handpicked for
+                        their vibrant colors, rich flavors, and nutritional goodness. From juicy tropical delights to
+                        rare seasonal gems, every bite brings you closer to the taste of freshness. Perfect for
+                        snacking, gifting, or adding a burst of flavor to your recipes — only the best makes it to our
+                        store.
                     </p>
                     <div class="flex gap-4">
-                        <a href="#shop"
+                        <Link href="/shop"
                             class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">
-                            Buy Now
-                        </a>
+                        Buy Now
+                        </Link>
                     </div>
                 </div>
 
