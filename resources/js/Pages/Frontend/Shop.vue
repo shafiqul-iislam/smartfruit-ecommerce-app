@@ -6,11 +6,13 @@ import { Head } from '@inertiajs/vue3';
 
 
 <template>
-    <Head title="Shop" />
 
+    <Head title="Shop" />
     <Navbar />
 
-    <section class="py-16 bg-gray-50">
+    <section class="py-12 bg-gray-50">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Shop</h2>
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-4 gap-8">
 
             <!-- Sidebar -->
@@ -33,35 +35,38 @@ import { Head } from '@inertiajs/vue3';
                     <div class="space-y-4">
                         <!-- Item -->
                         <div class="flex items-center space-x-4">
-                            <img src="/storage/images/apple.jpg" class="w-16 h-16 rounded object-cover" alt="Apple" />
+                            <img src="/storage/images/fruite-item-6.jpg" class="w-16 h-16 rounded object-cover"
+                                alt="Apple" />
                             <div>
                                 <h4 class="text-sm font-medium text-gray-900">Fresh Apple</h4>
                                 <div class="flex text-yellow-400 text-xs">
                                     ★★★★☆
                                 </div>
-                                <p class="text-green-600 text-sm">$4.99</p>
+                                <p class="text-green-600 text-sm">৳350</p>
                             </div>
                         </div>
                         <!-- Item -->
                         <div class="flex items-center space-x-4">
-                            <img src="/storage/images/tomato.jpg" class="w-16 h-16 rounded object-cover" alt="Tomato" />
+                            <img src="/storage/images/vegetable-item-1.jpg" class="w-16 h-16 rounded object-cover"
+                                alt="Tomato" />
                             <div>
                                 <h4 class="text-sm font-medium text-gray-900">Organic Tomato</h4>
                                 <div class="flex text-yellow-400 text-xs">
                                     ★★★★★
                                 </div>
-                                <p class="text-green-600 text-sm">$2.49</p>
+                                <p class="text-green-600 text-sm">৳120</p>
                             </div>
                         </div>
                         <!-- Item -->
                         <div class="flex items-center space-x-4">
-                            <img src="/storage/images/carrot.jpg" class="w-16 h-16 rounded object-cover" alt="Carrot" />
+                            <img src="/storage/images/featur-2.jpg" class="w-16 h-16 rounded object-cover"
+                                alt="Strawberry" />
                             <div>
-                                <h4 class="text-sm font-medium text-gray-900">Fresh Carrot</h4>
+                                <h4 class="text-sm font-medium text-gray-900">Strawberry</h4>
                                 <div class="flex text-yellow-400 text-xs">
                                     ★★★☆☆
                                 </div>
-                                <p class="text-green-600 text-sm">$1.99</p>
+                                <p class="text-green-600 text-sm">৳199</p>
                             </div>
                         </div>
                     </div>
@@ -74,7 +79,7 @@ import { Head } from '@inertiajs/vue3';
                     <!-- Product Card -->
                     <div v-for="i in 9" :key="i"
                         class="bg-white shadow rounded-lg overflow-hidden hover:shadow-lg transition">
-                        <img src="/storage/images/fruit-sample.jpg" alt="Product" class="w-full h-48 object-cover" />
+                        <img src="/storage/images/featur-1.jpg" alt="Product" class="w-full h-48 object-cover" />
                         <div class="p-4">
                             <h3 class="text-lg font-semibold">Fresh Fruit {{ i }}</h3>
                             <p class="text-gray-600 text-sm mb-2">Delicious and organic</p>
@@ -95,9 +100,7 @@ import { Head } from '@inertiajs/vue3';
                     </nav>
                 </div>
             </main>
-
         </div>
     </section>
-
     <Footer />
 </template>

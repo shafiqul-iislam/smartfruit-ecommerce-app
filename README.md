@@ -13,5 +13,14 @@
 ### Vegetables
 ![Ecommerce App](public/screenshots/vegetables.jpg)
 
+### Shop
+![Ecommerce App](public/screenshots/shop.jpg)
+
 ### Footer
 ![Ecommerce App](public/screenshots/footer.jpg)
+
+### Checkout
+![Ecommerce App](public/screenshots/checkout.jpg)
+
+### Full Page
+![Ecommerce App](public/screenshots/fullpage.jpg)

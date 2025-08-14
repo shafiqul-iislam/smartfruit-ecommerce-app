@@ -39,7 +39,7 @@ function decreaseQty(index) {
 
   <section class="py-16 px-6 bg-gray-50">
     <div class="max-w-5xl mx-auto px-4">
-      <h1 class="text-3xl font-bold mb-8">Checkout</h1>
+      <h1 class="text-3xl font-bold mb-8">Cart</h1>
 
       <!-- Cart Table -->
       <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
