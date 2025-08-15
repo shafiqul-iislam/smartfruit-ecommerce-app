@@ -33,13 +33,15 @@ function placeOrder() {
 </script>
 
 <template>
+
   <Head title="Checkout" />
 
   <Navbar />
 
-  <section class="py-16 bg-gray-50">
-    <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8">
+  <section class="py-12 bg-gray-50">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Checkout</h2>
 
+    <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8">
       <!-- Billing & Shipping Info -->
       <div class="lg:col-span-2 bg-white p-6 rounded-lg shadow-md space-y-6">
         <h2 class="text-2xl font-semibold mb-4">Billing & Shipping Information</h2>

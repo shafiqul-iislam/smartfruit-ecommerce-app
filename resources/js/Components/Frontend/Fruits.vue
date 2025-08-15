@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { Link } from '@inertiajs/vue3';
 
+function addToCart() {
+    alert('Added to cart');    
+}
+
 </script>
 
 <template>
@@ -22,7 +26,7 @@ import { Link } from '@inertiajs/vue3';
                         </p>
                         <div class="mt-4 flex items-center justify-between">
                             <span class="text-xl font-bold text-indigo-600">BDT 350</span>
-                            <button
+                            <button @click="addToCart()"
                                 class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm font-semibold">
                                 Add to Cart
                             </button>
