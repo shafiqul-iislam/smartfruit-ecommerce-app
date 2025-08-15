@@ -53,13 +53,19 @@ Route::get('/not-found', function () {
 });
 
 
-// after login
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified',
-])->group(function () {
+// // after login
+// Route::middleware(['auth:sanctum',
+//     config('jetstream.auth_session'),
+//     'verified',
+// ])->group(function () {
+//     Route::get('/dashboard', function () {
+//         return Inertia::render('Dashboard');
+//     })->name('dashboard');
+// });
+
+
+Route::middleware(['auth',])->group(function () {
     Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
+        return Inertia::render('Backend/Dashboard');
     })->name('dashboard');
 });
