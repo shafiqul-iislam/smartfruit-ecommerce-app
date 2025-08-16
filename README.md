@@ -15,3 +15,6 @@
 
 ### Contact
 ![Ecommerce App](public/screenshots/contact.jpg)
+
+### Admin Dashboard Is Running
+![Ecommerce App](public/screenshots/dashboard.jpg)

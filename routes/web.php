@@ -66,6 +66,6 @@ Route::get('/not-found', function () {
 
 Route::middleware(['auth',])->group(function () {
     Route::get('/dashboard', function () {
-        return Inertia::render('Backend/Dashboard');
+        return Inertia::render('Backend/Dashboard/Dashboard');
     })->name('dashboard');
 });
