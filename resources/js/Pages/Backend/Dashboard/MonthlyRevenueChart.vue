@@ -8,16 +8,22 @@ const chartRef = ref(null);
 
 onMounted(() => {
     const ctx = chartRef.value.getContext("2d");
+
     new Chart(ctx, {
-        type: "bar", // you can change to "line"
+        type: "line",
         data: {
             labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
             datasets: [
                 {
-                    label: "Monthly Sales",
-                    data: [1200, 1900, 1500, 2000, 2300, 1800, 2500, 3000],
-                    backgroundColor: "rgba(59, 130, 246, 0.6)", // Tailwind blue-500
-                    borderRadius: 8,
+                    label: "Revenue ($)",
+                    data: [5000, 7000, 6500, 8000, 9000, 7500, 9500, 11000],
+                    borderColor: "rgba(16, 185, 129, 1)", // Tailwind emerald-500
+                    backgroundColor: "rgba(16, 185, 129, 0.2)", // fill under line
+                    fill: true,
+                    tension: 0.4, // smooth curve
+                    borderWidth: 2,
+                    pointRadius: 4,
+                    pointBackgroundColor: "rgba(16, 185, 129, 1)",
                 },
             ],
         },
@@ -30,7 +36,7 @@ onMounted(() => {
             scales: {
                 y: {
                     beginAtZero: true,
-                    ticks: { stepSize: 500 },
+                    ticks: { callback: value => `$${value}` },
                 },
             },
         },
@@ -39,8 +45,8 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="bg-white rounded-xl shadow p-6 mt-4 w-full">
-        <h2 class="text-lg font-semibold mb-4">Monthly Sales</h2>
+    <div class="bg-white rounded-xl shadow p-6 mt-4">
+        <h2 class="text-lg font-semibold mb-4">Monthly Revenue</h2>
         <div class="h-72">
             <canvas ref="chartRef"></canvas>
         </div>

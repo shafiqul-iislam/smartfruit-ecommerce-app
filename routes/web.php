@@ -68,4 +68,9 @@ Route::middleware(['auth',])->group(function () {
     Route::get('/dashboard', function () {
         return Inertia::render('Backend/Dashboard/Dashboard');
     })->name('dashboard');
+
+
+    Route::get('/products', function () {
+        return Inertia::render('Backend/Products/Products');
+    })->name('products');
 });

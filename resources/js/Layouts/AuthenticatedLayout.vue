@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from "vue";
 import { Link, router } from "@inertiajs/vue3";
+import { CubeIcon, HomeIcon, ShoppingCartIcon } from "@heroicons/vue/24/outline";
+import Footer from '@/Layouts/Footer.vue';
 
 const isCollapsed = ref(false);
 const submenuOpen = ref(false);
@@ -41,21 +43,14 @@ const logout = () => {
         <ul class="space-y-1">
           <li>
             <a href="#" class="flex items-center gap-3 px-4 py-2 text-gray-700 hover:bg-gray-100">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M3 12l2-2m0 0l7-7 7 7M13 5v6h6" />
-              </svg>
+              <HomeIcon class="w-5 h-5" />
               <span v-if="!isCollapsed">Dashboard</span>
             </a>
           </li>
 
           <li>
             <a href="#" class="flex items-center gap-3 px-4 py-2 text-gray-700 hover:bg-gray-100">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
+              <ShoppingCartIcon class="w-5 h-5" />
               <span v-if="!isCollapsed">Orders</span>
             </a>
           </li>
@@ -64,10 +59,7 @@ const logout = () => {
           <li>
             <button @click="submenuOpen = !submenuOpen"
               class="flex items-center w-full gap-3 px-4 py-2 text-gray-700 hover:bg-gray-100">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
+              <CubeIcon class="w-5 h-5" />
               <span v-if="!isCollapsed">Products</span>
               <svg v-if="!isCollapsed" :class="[submenuOpen ? 'rotate-180' : '']"
                 class="w-4 h-4 ml-auto transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -82,7 +74,9 @@ const logout = () => {
               enter-to-class="max-h-40 opacity-100" leave-from-class="max-h-40 opacity-100"
               leave-to-class="max-h-0 opacity-0">
               <ul v-show="submenuOpen && !isCollapsed" class="ml-10 mt-1 space-y-1 overflow-hidden">
-                <li><a href="#" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">All Products</a></li>
+                <li>
+                  <Link href="/products" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">All Products</Link>
+                </li>
                 <li><a href="#" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Add New</a></li>
                 <li><a href="#" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Categories</a></li>
               </ul>
@@ -128,6 +122,8 @@ const logout = () => {
         <slot />
       </main>
 
+      <!-- Footer -->
+      <Footer />
     </div>
   </div>
 </template>
