@@ -77,7 +77,7 @@ const logout = () => {
                 <li>
                   <Link href="/products" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">All Products</Link>
                 </li>
-                <li><a href="#" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Add New</a></li>
+                <li><Link href="/product-create" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Add New</Link></li>
                 <li><a href="#" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Categories</a></li>
               </ul>
             </Transition>
