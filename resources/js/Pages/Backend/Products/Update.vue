@@ -31,13 +31,13 @@ const handleSubmit = () => {
 
 <template>
 
-    <Head title="Product Creation" />
+    <Head title="Product Edit" />
 
     <AuthenticatedLayout>
         <div class="min-h-screen bg-gray-100 flex items-center justify-center p-6">
             <!-- Changed max-w-lg → max-w-md -->
             <div class="bg-white shadow-xl rounded-2xl p-8 w-full">
-                <h2 class="text-2xl font-bold text-gray-800 mb-6">Add New Product</h2>
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Update Product</h2>
 
                 <form @submit.prevent="handleSubmit" class="space-y-5">
                     <!-- Product Name -->

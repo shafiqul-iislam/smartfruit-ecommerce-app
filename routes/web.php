@@ -77,4 +77,8 @@ Route::middleware(['auth',])->group(function () {
     Route::get('/product-create', function () {
         return Inertia::render('Backend/Products/Create');
     })->name('product-create');
+
+    Route::get('/user-profile', function () {
+        return Inertia::render('Backend/User/Profile');
+    })->name('user-profile');
 });
