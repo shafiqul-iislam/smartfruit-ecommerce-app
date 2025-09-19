@@ -8,12 +8,14 @@ const isCollapsed = ref(false);
 const productSubmenuOpen = ref(false);
 const userSubmenuOpen = ref(false);
 const profileOpen = ref(false); // profile dropdown
+const settingsSubmenuOpen = ref(false);
 
 function toggleSidebar() {
   isCollapsed.value = !isCollapsed.value;
   if (isCollapsed.value){
     productSubmenuOpen.value = false;
     userSubmenuOpen.value = false;
+    settingsSubmenuOpen.value = false;
   } 
 }
 
@@ -121,6 +123,35 @@ const logout = () => {
               </ul>
             </Transition>
           </li>
+
+          <li>
+            <button @click="settingsSubmenuOpen = !settingsSubmenuOpen"
+              class="flex items-center w-full gap-3 px-4 py-2 text-gray-700 hover:bg-gray-100">
+              <CubeIcon class="w-5 h-5" />
+              <span v-if="!isCollapsed">System Settings</span>
+              <svg v-if="!isCollapsed" :class="[settingsSubmenuOpen ? 'rotate-180' : '']"
+                class="w-4 h-4 ml-auto transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <!-- Submenu -->
+            <Transition enter-active-class="transition-all duration-300 ease-out"
+              leave-active-class="transition-all duration-300 ease-in" enter-from-class="max-h-0 opacity-0"
+              enter-to-class="max-h-40 opacity-100" leave-from-class="max-h-40 opacity-100"
+              leave-to-class="max-h-0 opacity-0">
+              <ul v-show="settingsSubmenuOpen && !isCollapsed" class="ml-10 mt-1 space-y-1 overflow-hidden">
+                <li>
+                  <Link href="/general-settings" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">General Settings</Link>
+                </li>
+                <li>
+                  <Link href="/software-settings" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Software Settings</Link>
+                </li>
+              </ul>
+            </Transition>
+          </li>
+
         </ul>
       </nav>
     </aside>
@@ -157,7 +188,7 @@ const logout = () => {
       </header>
 
       <!-- Page Content -->
-      <main>
+      <main class="px-8 py-8">
         <slot />
       </main>
 

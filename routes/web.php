@@ -81,4 +81,8 @@ Route::middleware(['auth',])->group(function () {
     Route::get('/user-profile', function () {
         return Inertia::render('Backend/User/Profile');
     })->name('user-profile');
+
+     Route::get('/general-settings', function () {
+        return Inertia::render('Backend/Settings/GeneralSettings');
+    })->name('general-settings');
 });
