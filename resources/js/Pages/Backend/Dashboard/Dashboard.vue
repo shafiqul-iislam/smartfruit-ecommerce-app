@@ -16,7 +16,7 @@ import { UsersIcon, ShoppingCartIcon, ArrowTrendingUpIcon, ShoppingBagIcon } fro
     <AuthenticatedLayout>
 
         <!-- Stats Cards -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 pt-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-2">
             <!-- Card 1 -->
             <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition">
                 <div class="flex items-center justify-between">
@@ -72,12 +72,12 @@ import { UsersIcon, ShoppingCartIcon, ArrowTrendingUpIcon, ShoppingBagIcon } fro
         </div>
 
         <!-- Main Content -->
-        <main class="p-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <main class="p-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <MonthlySalesChart />
                 <MonthlyRevenueChart />
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <RecentOrdersTable />
                 <NewCustomersTable />
             </div>

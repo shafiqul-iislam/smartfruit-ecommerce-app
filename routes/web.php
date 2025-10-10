@@ -1,8 +1,11 @@
 <?php
 
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Application;
+use App\Http\Controllers\Admin\Auth\AuthController;
+use App\Http\Controllers\Admin\Product\ProductController;
+use App\Models\Product;
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
@@ -64,19 +67,22 @@ Route::get('/not-found', function () {
 // });
 
 
-Route::middleware(['auth',])->group(function () {
+Route::get('/admin/login', function () {
+    return Inertia::render('Backend/Auth/AdminLogin');
+});
+
+Route::post('/admin-login', [AuthController::class, 'adminLogin'])->name('admin-login');
+
+// after admin login
+Route::middleware(['auth:admin',])->prefix('admin')->name('admin.')->group(function () {
+
     Route::get('/dashboard', function () {
         return Inertia::render('Backend/Dashboard/Dashboard');
     })->name('dashboard');
 
 
-    Route::get('/products', function () {
-        return Inertia::render('Backend/Products/Products');
-    })->name('products');
+    Route::resource('products', ProductController::class);
 
-    Route::get('/product-create', function () {
-        return Inertia::render('Backend/Products/Create');
-    })->name('product-create');
 
     Route::get('/user-profile', function () {
         return Inertia::render('Backend/User/Profile');

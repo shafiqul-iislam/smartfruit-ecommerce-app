@@ -48,10 +48,10 @@ const logout = () => {
       <nav class="mt-4">
         <ul class="space-y-1">
           <li>
-            <a href="#" class="flex items-center gap-3 px-4 py-2 text-gray-700 hover:bg-gray-100">
+            <Link href="/admin/dashboard" class="flex items-center gap-3 px-4 py-2 text-gray-700 hover:bg-gray-100">
               <HomeIcon class="w-5 h-5" />
               <span v-if="!isCollapsed">Dashboard</span>
-            </a>
+            </Link>
           </li>
 
           <li>
@@ -81,10 +81,10 @@ const logout = () => {
               leave-to-class="max-h-0 opacity-0">
               <ul v-show="productSubmenuOpen && !isCollapsed" class="ml-10 mt-1 space-y-1 overflow-hidden">
                 <li>
-                  <Link href="/products" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">All Products</Link>
+                  <Link href="/admin/products" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">All Products</Link>
                 </li>
                 <li>
-                  <Link href="/product-create" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Add New</Link>
+                  <Link href="/admin/products/create" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Add New</Link>
                 </li>
                 <li><a href="#" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Categories</a></li>
               </ul>
@@ -188,7 +188,7 @@ const logout = () => {
       </header>
 
       <!-- Page Content -->
-      <main class="px-8 py-8">
+      <main class="px-8 py-1">
         <slot />
       </main>
 

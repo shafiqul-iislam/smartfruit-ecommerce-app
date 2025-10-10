@@ -34,31 +34,34 @@ const handleSubmit = () => {
     <Head title="Product Creation" />
 
     <AuthenticatedLayout>
-        <div class="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+        <div class="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
             <!-- Changed max-w-lg → max-w-md -->
             <div class="bg-white shadow-xl rounded-2xl p-8 w-full">
                 <h2 class="text-2xl font-bold text-gray-800 mb-6">Add New Product</h2>
 
                 <form @submit.prevent="handleSubmit" class="space-y-5">
-                    <!-- Product Name -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Product Name</label>
-                        <input v-model="form.name" type="text" placeholder="Enter product name"
-                            class="w-4/6 border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            required />
-                    </div>
 
-                    <!-- Category -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Category</label>
-                        <select v-model="form.category"
-                            class="w-4/6 border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            <option disabled value="">Select category</option>
-                            <option>Electronics</option>
-                            <option>Clothing</option>
-                            <option>Books</option>
-                            <option>Furniture</option>
-                        </select>
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Product Name -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Product Name</label>
+                            <input v-model="form.name" type="text" placeholder="Enter product name"
+                                class="w-4/6 border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required />
+                        </div>
+
+                        <!-- Category -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Category</label>
+                            <select v-model="form.category"
+                                class="w-4/6 border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option disabled value="">Select category</option>
+                                <option>Electronics</option>
+                                <option>Clothing</option>
+                                <option>Books</option>
+                                <option>Furniture</option>
+                            </select>
+                        </div>
                     </div>
 
                     <!-- Price -->
