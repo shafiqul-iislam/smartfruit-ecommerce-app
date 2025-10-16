@@ -3,6 +3,7 @@ import { ref } from "vue";
 import { Link, router } from "@inertiajs/vue3";
 import { CubeIcon, HomeIcon, ShoppingCartIcon } from "@heroicons/vue/24/outline";
 import Footer from '@/Layouts/Footer.vue';
+import Darkmode from "@/Components/Backend/Darkmode.vue";
 
 const isCollapsed = ref(false);
 const productSubmenuOpen = ref(false);
@@ -12,11 +13,11 @@ const settingsSubmenuOpen = ref(false);
 
 function toggleSidebar() {
   isCollapsed.value = !isCollapsed.value;
-  if (isCollapsed.value){
+  if (isCollapsed.value) {
     productSubmenuOpen.value = false;
     userSubmenuOpen.value = false;
     settingsSubmenuOpen.value = false;
-  } 
+  }
 }
 
 const logout = () => {
@@ -49,8 +50,8 @@ const logout = () => {
         <ul class="space-y-1">
           <li>
             <Link href="/admin/dashboard" class="flex items-center gap-3 px-4 py-2 text-gray-700 hover:bg-gray-100">
-              <HomeIcon class="w-5 h-5" />
-              <span v-if="!isCollapsed">Dashboard</span>
+            <HomeIcon class="w-5 h-5" />
+            <span v-if="!isCollapsed">Dashboard</span>
             </Link>
           </li>
 
@@ -81,10 +82,12 @@ const logout = () => {
               leave-to-class="max-h-0 opacity-0">
               <ul v-show="productSubmenuOpen && !isCollapsed" class="ml-10 mt-1 space-y-1 overflow-hidden">
                 <li>
-                  <Link href="/admin/products" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">All Products</Link>
+                  <Link href="/admin/products" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">All Products
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/admin/products/create" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Add New</Link>
+                  <Link href="/admin/products/create" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Add New
+                  </Link>
                 </li>
                 <li><a href="#" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Categories</a></li>
               </ul>
@@ -143,10 +146,12 @@ const logout = () => {
               leave-to-class="max-h-0 opacity-0">
               <ul v-show="settingsSubmenuOpen && !isCollapsed" class="ml-10 mt-1 space-y-1 overflow-hidden">
                 <li>
-                  <Link href="/general-settings" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">General Settings</Link>
+                  <Link href="/general-settings" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">General
+                  Settings</Link>
                 </li>
                 <li>
-                  <Link href="/software-settings" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Software Settings</Link>
+                  <Link href="/software-settings" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Software
+                  Settings</Link>
                 </li>
               </ul>
             </Transition>
@@ -163,27 +168,31 @@ const logout = () => {
         <!-- Page Title -->
         <h2 class="text-xl font-semibold text-gray-800">Dashboard</h2>
 
-        <!-- Profile Dropdown -->
-        <div class="relative">
-          <button @click="profileOpen = !profileOpen" class="flex items-center focus:outline-none">
-            <img src="https://i.pravatar.cc/40" class="w-10 h-10 rounded-full border" />
-          </button>
+        <div class="flex items-center gap-4">
+          <Darkmode />
+          <!-- Profile Dropdown -->
+          <div class="relative">
+            <button @click="profileOpen = !profileOpen" class="flex items-center focus:outline-none">
+              <img src="https://i.pravatar.cc/40" class="w-10 h-10 rounded-full border" />
+            </button>
 
-          <Transition enter-active-class="transition duration-200 ease-out"
-            enter-from-class="transform opacity-0 scale-95" enter-to-class="transform opacity-100 scale-100"
-            leave-active-class="transition duration-200 ease-in" leave-from-class="transform opacity-100 scale-100"
-            leave-to-class="transform opacity-0 scale-95">
-            <div v-show="profileOpen" class="absolute right-0 mt-2 w-40 bg-white border rounded-md shadow-lg py-2 z-50">
-              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a>
-              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Settings</a>
+            <Transition enter-active-class="transition duration-200 ease-out"
+              enter-from-class="transform opacity-0 scale-95" enter-to-class="transform opacity-100 scale-100"
+              leave-active-class="transition duration-200 ease-in" leave-from-class="transform opacity-100 scale-100"
+              leave-to-class="transform opacity-0 scale-95">
+              <div v-show="profileOpen"
+                class="absolute right-0 mt-2 w-40 bg-white border rounded-md shadow-lg py-2 z-50">
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Settings</a>
 
-              <!-- Authentication -->
-              <form @submit.prevent="logout" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                <button type="submit">Log Out</button>
-              </form>
+                <!-- Authentication -->
+                <form @submit.prevent="logout" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  <button type="submit">Log Out</button>
+                </form>
 
-            </div>
-          </Transition>
+              </div>
+            </Transition>
+          </div>
         </div>
       </header>
 
