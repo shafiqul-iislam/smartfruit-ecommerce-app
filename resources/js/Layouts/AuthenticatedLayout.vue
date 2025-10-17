@@ -67,7 +67,7 @@ const logout = () => {
             <button @click="productSubmenuOpen = !productSubmenuOpen"
               class="flex items-center w-full gap-3 px-4 py-2 text-gray-700 hover:bg-gray-100">
               <CubeIcon class="w-5 h-5" />
-              <span v-if="!isCollapsed">Products</span>
+              <span v-if="!isCollapsed">Manage Products</span>
               <svg v-if="!isCollapsed" :class="[productSubmenuOpen ? 'rotate-180' : '']"
                 class="w-4 h-4 ml-auto transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor">
@@ -81,6 +81,7 @@ const logout = () => {
               enter-to-class="max-h-40 opacity-100" leave-from-class="max-h-40 opacity-100"
               leave-to-class="max-h-0 opacity-0">
               <ul v-show="productSubmenuOpen && !isCollapsed" class="ml-10 mt-1 space-y-1 overflow-hidden">
+                <li><Link href="/admin/categories" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Categories</Link></li>
                 <li>
                   <Link href="/admin/products" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">All Products
                   </Link>
@@ -88,8 +89,7 @@ const logout = () => {
                 <li>
                   <Link href="/admin/products/create" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Add New
                   </Link>
-                </li>
-                <li><a href="#" class="block px-2 py-1 text-gray-600 hover:bg-gray-100">Categories</a></li>
+                </li>                
               </ul>
             </Transition>
           </li>

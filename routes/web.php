@@ -4,6 +4,7 @@ use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\Admin\Auth\AuthController;
+use App\Http\Controllers\Admin\Product\CategoryController;
 use App\Http\Controllers\Admin\Product\ProductController;
 use App\Models\Product;
 
@@ -81,8 +82,8 @@ Route::middleware(['auth:admin',])->prefix('admin')->name('admin.')->group(funct
     })->name('dashboard');
 
 
+    Route::resource('categories', CategoryController::class);
     Route::resource('products', ProductController::class);
-
 
     Route::get('/user-profile', function () {
         return Inertia::render('Backend/User/Profile');
